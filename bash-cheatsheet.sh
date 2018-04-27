@@ -1,5 +1,32 @@
 #!/bin/bash
 ##############################################################################
+# TIPS & TRICKS
+##############################################################################
+
+
+# set an alias
+cd; nano .bash_profile
+> alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add your alias in .bash_profile
+
+# to quickly go to a specific directory
+cd; nano .bashrc
+> shopt -s cdable_vars
+> export websites="/Users/mac/Documents/websites"
+
+source .bashrc
+cd $websites
+
+history                             # show commands used
+fc -li 1                            # show history with timestamps
+history | grep "command_to_search"  # search a command or part of it in history
+history | grep -C 5 "search"        # C for Context: show 5 commands before and after the command you are looking for
+fc -li 1 | grep -C 5 "search"       # search with timestamp and context}
+htop                                # Monitor Memory and CPUs
+sudo iotop --delay=2                # Monitor Inputs and Outputs from Disk
+glances                             # Monitor Everything
+tracepath google.com.ar             # Shows hops along the network to destination
+
+##############################################################################
 # SHORTCUTS
 ##############################################################################
 
@@ -370,33 +397,6 @@ trap - sig1 sig2    # resets the action taken when the signal is received to the
 disown <PID|JID>    # removes the process from the list of jobs
 
 wait                # waits until all background jobs have finished
-
-
-##############################################################################
-# TIPS & TRICKS
-##############################################################################
-
-
-# set an alias
-cd; nano .bash_profile
-> alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add your alias in .bash_profile
-
-# to quickly go to a specific directory
-cd; nano .bashrc
-> shopt -s cdable_vars
-> export websites="/Users/mac/Documents/websites"
-
-source .bashrc
-cd $websites
-
-history                             # show commands used
-fc -li 1                            # show history with timestamps
-history | grep "command_to_search"  # search a command or part of it in history
-history | grep -C 5 "search"        # C for Context: show 5 commands before and after the command you are looking for
-fc -li 1 | grep -C 5 "search"       # search with timestamp and context}
-htop                                # Monitor Memory and CPUs
-sudo iotop --delay=2                # Monitor Inputs and Outputs from Disk
-glances                             # Monitor Everything
 
 
 ##############################################################################
