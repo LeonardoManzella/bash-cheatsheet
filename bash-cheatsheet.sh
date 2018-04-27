@@ -25,6 +25,8 @@ htop                                # Monitor Memory and CPUs
 sudo iotop --delay=2                # Monitor Inputs and Outputs from Disk
 glances                             # Monitor Everything
 tracepath www.google.com.ar -nb -m 255 # Shows hops along the network to destination
+CTRL+K  # deletes (kill) forward to end of line
+CTRL+W  # kills the word behind the cursor
 
 ##############################################################################
 # SHORTCUTS
