@@ -393,7 +393,10 @@ history                             # show commands used
 fc -li 1                            # show history with timestamps
 history | grep "command_to_search"  # search a command or part of it in history
 history | grep -C 5 "search"        # C for Context: show 5 commands before and after the command you are looking for
-fc -li 1 | grep -C 5 "search"       # search with timestamp and context
+fc -li 1 | grep -C 5 "search"       # search with timestamp and context}
+htop                                # Monitor Memory and CPUs
+sudo iotop --delay=2                # Monitor Inputs and Outputs from Disk
+glances                             # Monitor Everything
 
 
 ##############################################################################
