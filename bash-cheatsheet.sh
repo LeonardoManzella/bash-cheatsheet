@@ -24,7 +24,7 @@ fc -li 1 | grep -C 5 "search"       # search with timestamp and context}
 htop                                # Monitor Memory and CPUs
 sudo iotop --delay=2                # Monitor Inputs and Outputs from Disk
 glances                             # Monitor Everything
-tracepath google.com.ar             # Shows hops along the network to destination
+tracepath www.google.com.ar -nb -m 255 # Shows hops along the network to destination
 
 ##############################################################################
 # SHORTCUTS
