@@ -24,9 +24,9 @@ fc -li 1 | grep -C 5 "search"       # search with timestamp and context}
 htop                                # Monitor Memory and CPUs
 sudo iotop --delay=2                # Monitor Inputs and Outputs from Disk
 glances                             # Monitor Everything
-tracepath www.google.com.ar -nb -m 255 # Shows hops along the network to destination
-mtr www.google.com.ar --report-cycles 5# Similar to tracepath but more visual
-apropos "term_to_search"            # Very useful to find a forgotten command. Finds inside the description of the "man" of all available commands
+tracepath www.google.com.ar -nb -m 255  # Shows hops along the network to destination
+mtr www.google.com.ar --report-cycles 5 # Similar to tracepath but more visual
+apropos "term_to_search"            # Very useful to find a forgotten command. Searches inside the description of the "man" of all available commands
 CTRL+K  # deletes (kill) forward to end of line
 CTRL+W  # kills the word behind the cursor
 
