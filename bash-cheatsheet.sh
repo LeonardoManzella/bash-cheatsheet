@@ -35,6 +35,7 @@ first_command || second__comand     # Run second_command only if first_command f
 command &                           # With & the process starts in the background, so you can continue to use the shell and do not have to wait until the script is finished. If you forget it, you can stop the current running process with Ctrl-Z and continue it in the background with  bg (or in the foreground with fg). For more information, see job control
 CTRL+K  # deletes (kill) forward to end of line
 CTRL+W  # kills the word behind the cursor
+xrandr # Primitive command line interface to RandR extension, to set up a second monitor. Example: xrandr --output DP-1 --right-of eDP-1 --mode 1920x1080 --output eDP-1 --primary --mode 1366x768 # Configure Second Monitor
 
 ##############################################################################
 # SHORTCUTS
