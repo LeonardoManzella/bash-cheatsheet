@@ -16,6 +16,7 @@ cd; nano .bashrc
 source .bashrc
 cd $websites
 
+cd -                                # alternate between last directory location
 history                             # show commands used
 fc -li 1                            # show history with timestamps
 history | grep "command_to_search"  # search a command or part of it in history
