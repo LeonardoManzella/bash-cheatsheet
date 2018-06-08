@@ -37,6 +37,7 @@ command &                           # With & the process starts in the backgroun
 CTRL+K  # deletes (kill) forward to end of line
 CTRL+W  # kills the word behind the cursor
 xrandr # Primitive command line interface to RandR extension, to set up a second monitor. Example: xrandr --output DP-1 --right-of eDP-1 --mode 1920x1080 --output eDP-1 --primary --mode 1366x768 # Configure Second Monitor
+locate --existing file_name         # Find/Locates files by name "file_name" inside the file system
 
 ##############################################################################
 # SHORTCUTS
