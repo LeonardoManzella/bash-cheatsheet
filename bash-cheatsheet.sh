@@ -30,6 +30,7 @@ mtr www.google.com.ar --report-cycles 5 # Similar to tracepath but more visual
 apropos "term_to_search"            # Very useful to find a forgotten command. Searches inside the description of the "man" of all available commands
 whatis --long "command"             # Show command description
 whereis "application_command"       # Show where an application is installed
+which "command"                     # Shows the complete path of a command or file
 notify-send "notificatio_text"      # Send a Notification to yourself, useful to combine with '&&'(command successful) and '||' (command fail)
 first_command && second__comand     # Run second_command only if first_command executed and exited succesfully
 first_command || second__comand     # Run second_command only if first_command failed to execute
