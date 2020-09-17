@@ -33,6 +33,8 @@ apropos "term_to_search"            # Very useful to find a forgotten command. S
 whatis --long "command"             # Show command description
 whereis "application_command"       # Show where an application is installed
 which "command"                     # Shows the complete path of a command or file
+apt-cache search "package_name"     # Find installed apt package names
+dpkg -L "package_name" | grep bin   # Find where the package is installed
 notify-send "notificatio_text"      # Send a Notification to yourself, useful to combine with '&&'(command successful) and '||' (command fail)
 first_command && second__comand     # Run second_command only if first_command executed and exited succesfully
 first_command || second__comand     # Run second_command only if first_command failed to execute
